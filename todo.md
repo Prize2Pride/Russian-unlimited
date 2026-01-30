@@ -42,3 +42,10 @@
 - [x] Créer le méga-prompt de documentation du projet
 - [x] Documenter tous les niveaux de langue russe (Street → Diplomatic)
 - [x] Inclure les instructions pour le contenu +18 (mode adulte)
+
+## Meta-Prompts & Content Generation System
+
+- [ ] Créer 10+ méta-prompts de génération de contenu
+- [ ] Système de génération de 10 000+ leçons transformatives
+- [ ] Intégrer le générateur dans la plateforme
+- [ ] Pousser les mises à jour vers GitHub
