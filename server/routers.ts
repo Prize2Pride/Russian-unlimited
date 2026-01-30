@@ -1,21 +1,17 @@
-import { COOKIE_NAME } from "@shared/const";
+import { COOKIE_NAME } from "../shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
-import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
+import { publicProcedure, protectedProcedure, router, adminProcedure } from "./_core/trpc";
 import { z } from "zod";
 import { TRPCError } from "@trpc/server";
 import * as db from "./db";
+import { adminRouter } from "./routers/admin";
 
-// Admin-only procedure
-const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
-  if (ctx.user.role !== 'admin' && ctx.user.role !== 'institution') {
-    throw new TRPCError({ code: 'FORBIDDEN', message: 'Admin or institution access required' });
-  }
-  return next({ ctx });
-});
+
 
 export const appRouter = router({
   system: systemRouter,
+  admin: adminRouter,
   
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
