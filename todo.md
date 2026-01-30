@@ -38,7 +38,7 @@
 
 ## GitHub Export & Documentation
 
-- [ ] Exporter le projet vers GitHub Russian-unlimited
-- [ ] Créer le méga-prompt de documentation du projet
-- [ ] Documenter tous les niveaux de langue russe (Street → Diplomatic)
-- [ ] Inclure les instructions pour le contenu +18 (mode adulte)
+- [x] Exporter le projet vers GitHub Russian-unlimited
+- [x] Créer le méga-prompt de documentation du projet
+- [x] Documenter tous les niveaux de langue russe (Street → Diplomatic)
+- [x] Inclure les instructions pour le contenu +18 (mode adulte)
