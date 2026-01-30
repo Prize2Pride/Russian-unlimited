@@ -229,6 +229,6 @@ describe("Prize2Pride API - Admin Routes", () => {
       description: "Test level",
     };
 
-    await expect(caller.levels.create(newLevel)).rejects.toThrow("Admin or institution access required");
+    await expect(caller.levels.create(newLevel)).rejects.toThrow("You do not have required permission");
   });
 });
