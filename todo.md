@@ -35,3 +35,10 @@
 - [x] Contrôle d'accès basé sur les rôles
 - [x] Permissions institutionnelles
 - [x] Gestion des utilisateurs admin
+
+## GitHub Export & Documentation
+
+- [ ] Exporter le projet vers GitHub Russian-unlimited
+- [ ] Créer le méga-prompt de documentation du projet
+- [ ] Documenter tous les niveaux de langue russe (Street → Diplomatic)
+- [ ] Inclure les instructions pour le contenu +18 (mode adulte)
